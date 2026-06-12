@@ -28,6 +28,6 @@ export const frontendProjects = [
     description:
       "Responsive portfolio built with React.",
     image: "/projects/portfolio/portfoliocover.png",
-    github: "https://github.com/SAshitha29/portfolio.git",
+    github: "https://github.com/SAshitha29/Ashitha_Portfolio.git"
   },
 ];
