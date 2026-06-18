@@ -4,7 +4,7 @@ export default function Education() {
       year: "2022 - 2026",
       title: "B.E. in Computer Science & Engineering",
       institute: "Guru Nanak Dev Engineering College, Bidar (VTU)",
-      score: "CGPA: 9.07 / 10",
+      score: "CGPA: 9.12 / 10",
     },
     {
       year: "2020 - 2022",
