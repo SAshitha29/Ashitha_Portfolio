@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { trackEvent } from "../utils/analytics";
 
 const ProjectCard = ({ project }) => {
   const isUIUX =
@@ -73,6 +74,7 @@ md:h-[320px]
             href={project.caseStudy}
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackEvent("case_study_open")}
             className="
             px-5
             py-2
@@ -90,6 +92,7 @@ md:h-[320px]
             href={project.prototype}
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackEvent("prototype_open")}
             className="
             px-5
             py-2
@@ -112,6 +115,7 @@ md:h-[320px]
           href={project.github}
           target="_blank"
           rel="noreferrer"
+          onClick={() => trackEvent("github_project_open")}
           className="
           inline-block
           mt-6

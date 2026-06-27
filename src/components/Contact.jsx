@@ -1,3 +1,4 @@
+import { trackEvent } from "../utils/analytics";
 export default function Contact() {
   return (
     <section
@@ -58,6 +59,7 @@ export default function Contact() {
             <a
               href="/resume/Ashitha_Resume.pdf"
               download
+              onClick={() => trackEvent("resume_download")}
               className="
               px-8 py-4
               rounded-full
@@ -76,6 +78,7 @@ export default function Contact() {
               href="/resume/Ashitha_Resume.pdf"
               target="_blank"
               rel="noreferrer"
+              onClick={() => trackEvent("resume_view")}
               className="
               px-8 py-4
               rounded-full
@@ -114,6 +117,8 @@ export default function Contact() {
               key={index}
               onClick={() => {
                 if (item[0] === "LinkedIn") {
+                  trackEvent("linkedin_click");
+
                   window.open(
                     "https://www.linkedin.com/in/samsheashitha29-intern",
                     "_blank"
@@ -121,6 +126,8 @@ export default function Contact() {
                 }
 
                 if (item[0] === "GitHub") {
+                  trackEvent("github_click");
+
                   window.open(
                     "https://github.com/SAshitha29",
                     "_blank"

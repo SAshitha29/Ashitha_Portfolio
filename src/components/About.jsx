@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { trackEvent } from "../utils/analytics";
+
 
 const About = () => {
   return (
@@ -47,6 +49,7 @@ const About = () => {
             <a
   href="/resume/Ashitha_Resume.pdf"
   download
+  onClick={() => trackEvent("resume_download")}
   className="
 inline-block
 mt-10

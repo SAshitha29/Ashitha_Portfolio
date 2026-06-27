@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { profile } from "../data/profile";
+import { trackEvent } from "../utils/analytics";
 
 const Hero = () => {
   return (
@@ -167,6 +168,7 @@ lg:items-start
             href="/resume/Ashitha_Resume.pdf"
             target="_blank"
             rel="noreferrer"
+            onClick={() => trackEvent("resume_view")}
             className="
             px-8
             py-4
